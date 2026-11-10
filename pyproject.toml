@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adk-session-bound-tools"
+version = "0.1.0"
+description = "An offline Google ADK example of read-only tools scoped to the caller's session"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+dependencies = ["google-adk==2.14.0"]
+
+[project.scripts]
+adk-session-bound-tools = "adk_session_bound_tools.demo:main"
